@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy Policy — Ambient Mode Layout</title>
+  <meta name="description" content="Privacy Policy for the Ambient Mode Layout Chrome extension. Describes how layout preferences and YouTube page elements are handled.">
+  <meta name="robots" content="index,follow">
+  <!-- Replace with your live GitHub Pages URL before publishing, e.g. https://YOUR_USERNAME.github.io/YOUR_REPO/ -->
+  <link rel="canonical" href="https://YOUR_USERNAME.github.io/YOUR_REPO/">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <div>
+          <p class="brand-name">Ambient Mode Layout</p>
+          <p class="brand-tag">Chrome Extension Privacy Policy</p>
+        </div>
+      </div>
+      <nav class="header-nav" aria-label="Page">
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="layout container">
+    <aside class="toc" aria-label="Table of contents">
+      <p class="toc-title">Contents</p>
+      <nav>
+        <ol>
+          <li><a href="#privacy-policy">Privacy Policy</a></li>
+          <li><a href="#effective-date">Effective Date</a></li>
+          <li><a href="#overview">Overview</a></li>
+          <li><a href="#information-we-handle">Information We Handle</a></li>
+          <li><a href="#extension-preferences">Extension Preferences</a></li>
+          <li><a href="#youtube-page-content">YouTube Page Content</a></li>
+          <li><a href="#information-we-do-not-collect">Information We Do Not Collect</a></li>
+          <li><a href="#how-information-is-used">How Information Is Used</a></li>
+          <li><a href="#data-sharing">Data Sharing and Disclosure</a></li>
+          <li><a href="#analytics">Analytics and Advertising</a></li>
+          <li><a href="#data-retention">Data Retention</a></li>
+          <li><a href="#data-security">Data Security</a></li>
+          <li><a href="#third-party">Third-Party Services</a></li>
+          <li><a href="#chrome-storage-sync">Chrome Storage Sync</a></li>
+          <li><a href="#user-controls">User Controls</a></li>
+          <li><a href="#childrens-privacy">Children's Privacy</a></li>
+          <li><a href="#changes">Changes to This Privacy Policy</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#disclaimer">Chrome Web Store Disclaimer</a></li>
+        </ol>
+      </nav>
+    </aside>
+
+    <main id="main" class="content">
+      <article>
+        <header class="hero">
+          <h1 id="privacy-policy">Privacy Policy</h1>
+          <p class="lede">
+            This Privacy Policy explains how the <strong>Ambient Mode Layout</strong> Chrome extension
+            (“the Extension”) handles information when you use it on YouTube desktop watch pages.
+          </p>
+        </header>
+
+        <section id="effective-date" aria-labelledby="effective-date-heading">
+          <h2 id="effective-date-heading">Effective Date</h2>
+          <p><strong>October 6, 2026</strong></p>
+        </section>
+
+        <section id="overview" aria-labelledby="overview-heading">
+          <h2 id="overview-heading">Overview</h2>
+          <p>
+            Ambient Mode Layout improves the YouTube desktop watch-page experience by rearranging
+            the existing YouTube video player, comments, and recommendations into a side-by-side
+            cinematic layout in your browser.
+          </p>
+          <p>
+            Ambient Mode Layout does not operate a server that collects or stores your YouTube content
+            or personal information. The Extension stores certain layout preferences using Chrome’s
+            storage APIs. YouTube page elements are processed locally in the browser solely to provide
+            the Extension’s layout functionality.
+          </p>
+        </section>
+
+        <section id="information-we-handle" aria-labelledby="information-we-handle-heading">
+          <h2 id="information-we-handle-heading">Information We Handle</h2>
+          <p>It is helpful to distinguish three categories:</p>
+          <ul>
+            <li>
+              <strong>Data accessed locally</strong> — YouTube page DOM elements inspected or rearranged
+              in your browser so the Extension can apply its layout. This processing happens on your device
+              and is not intentionally transmitted to the Extension developer.
+            </li>
+            <li>
+              <strong>Data stored as extension preferences</strong> — user-selected layout settings saved
+              with Chrome’s <code>chrome.storage.sync</code> API (described below).
+            </li>
+            <li>
+              <strong>Data transmitted outside the browser by the Extension</strong> — the Extension does
+              not intentionally send YouTube page content or personal information to a developer-operated
+              backend or to analytics/advertising services.
+            </li>
+          </ul>
+        </section>
+
+        <section id="extension-preferences" aria-labelledby="extension-preferences-heading">
+          <h2 id="extension-preferences-heading">Extension Preferences</h2>
+          <p>
+            The Extension uses the Chrome permission <code>storage</code> and stores the following
+            configuration preferences via <code>chrome.storage.sync</code>:
+          </p>
+          <ul>
+            <li><code>enabled</code> — whether the layout feature is turned on</li>
+            <li><code>commentsWidth</code> — preferred width for the comments area</li>
+            <li><code>relatedWidth</code> — preferred width for the recommendations/related area</li>
+            <li><code>stickyRelated</code> — whether the related area uses sticky positioning</li>
+          </ul>
+          <p>
+            These values are extension configuration/preferences only. They are not YouTube account
+            credentials, browsing history, or scraped page content.
+          </p>
+        </section>
+
+        <section id="youtube-page-content" aria-labelledby="youtube-page-content-heading">
+          <h2 id="youtube-page-content-heading">YouTube Page Content</h2>
+          <p>
+            The Extension may inspect existing YouTube page elements in order to identify layout
+            components such as the video player, comments container, recommendations/related container,
+            YouTube navigation/header elements, and other layout containers. It rearranges existing
+            DOM elements in the page rather than scraping and transmitting their content.
+          </p>
+          <p>
+            Host access is limited to <code>https://www.youtube.com/*</code> as declared in the Extension’s
+            host permissions. The Extension does not own or control YouTube data; YouTube remains an
+            independent third-party service.
+          </p>
+          <p>
+            The Extension does not intentionally extract and transmit comments, video titles, descriptions,
+            thumbnails, video IDs, channel information, Google account information, authentication
+            credentials, cookies, passwords, payment information, health information, or location information.
+          </p>
+        </section>
+
+        <section id="information-we-do-not-collect" aria-labelledby="information-we-do-not-collect-heading">
+          <h2 id="information-we-do-not-collect-heading">Information We Do Not Collect</h2>
+          <p>
+            Ambient Mode Layout does not intentionally collect or transmit the following as collected data
+            to the Extension developer or to third-party analytics/advertising services:
+          </p>
+          <ul>
+            <li>Personally identifiable information</li>
+            <li>Names</li>
+            <li>Email addresses</li>
+            <li>Phone numbers</li>
+            <li>Physical addresses</li>
+            <li>Google account credentials</li>
+            <li>Passwords</li>
+            <li>Authentication tokens</li>
+            <li>Payment or financial information</li>
+            <li>Health information</li>
+            <li>Precise location information</li>
+            <li>Personal communications</li>
+            <li>Browsing history</li>
+            <li>User activity analytics</li>
+            <li>YouTube comments (as collected/transmitted data)</li>
+            <li>Video titles (as collected/transmitted data)</li>
+            <li>Video descriptions (as collected/transmitted data)</li>
+            <li>Channel information (as collected/transmitted data)</li>
+          </ul>
+          <p>
+            Local inspection of DOM elements for layout purposes is not the same as server-side collection
+            or transmission of that content.
+          </p>
+        </section>
+
+        <section id="how-information-is-used" aria-labelledby="how-information-is-used-heading">
+          <h2 id="how-information-is-used-heading">How Information Is Used</h2>
+          <p>Information handled by the Extension is used only to:</p>
+          <ul>
+            <li>Enable, disable, and apply the cinematic side-by-side layout on YouTube watch pages</li>
+            <li>Remember your layout preferences between sessions (via Chrome storage)</li>
+            <li>Identify and rearrange relevant page layout containers in your browser</li>
+          </ul>
+          <p>
+            Preferences and local page manipulation are not used for advertising, profiling, or selling data.
+          </p>
+        </section>
+
+        <section id="data-sharing" aria-labelledby="data-sharing-heading">
+          <h2 id="data-sharing-heading">Data Sharing and Disclosure</h2>
+          <p>
+            The Extension developer does not sell your personal information. The Extension does not
+            intentionally share YouTube page content or personal information with third parties for
+            advertising or analytics.
+          </p>
+          <p>
+            When Chrome Sync is enabled, Chrome itself may synchronize extension settings through your
+            Chrome/Google account. That synchronization is operated by Google/Chrome, not by a
+            developer-operated Ambient Mode Layout server. The Extension developer does not receive
+            those synchronized settings through a developer backend.
+          </p>
+          <p>
+            We may disclose information if required to do so by law or valid legal process, to the extent
+            any such information is actually in our possession—which, for this Extension’s architecture,
+            is limited because the Extension does not operate a developer-side user database of YouTube
+            content or personal profiles.
+          </p>
+        </section>
+
+        <section id="analytics" aria-labelledby="analytics-heading">
+          <h2 id="analytics-heading">Analytics and Advertising</h2>
+          <p>
+            The Extension does not use analytics or advertising/tracking services. It does not use
+            Google Analytics, Firebase, Sentry, PostHog, Mixpanel, Hotjar, Microsoft Clarity, or similar
+            services. This Privacy Policy page itself does not include analytics, advertising, or tracking scripts.
+          </p>
+        </section>
+
+        <section id="data-retention" aria-labelledby="data-retention-heading">
+          <h2 id="data-retention-heading">Data Retention</h2>
+          <p>
+            The Extension does not maintain a developer-operated database of user information.
+          </p>
+          <p>
+            Extension preferences may remain in Chrome’s storage according to Chrome’s storage behavior
+            until you change or remove them, uninstall the Extension, or clear extension/browser account
+            data using Chrome’s own mechanisms. No fixed developer-defined retention period is applied
+            on a developer server, because no such server-side user database is operated for this Extension.
+          </p>
+        </section>
+
+        <section id="data-security" aria-labelledby="data-security-heading">
+          <h2 id="data-security-heading">Data Security</h2>
+          <p>
+            Reasonable measures are used within the Extension’s architecture, including limiting host
+            permissions to YouTube, avoiding remote executable scripts, and storing only layout preferences
+            through Chrome’s storage APIs rather than operating a custom backend for user content.
+          </p>
+          <p>
+            No method of electronic storage or transmission can be guaranteed to be completely secure.
+            You should also review the security and privacy practices of Chrome/Google and YouTube.
+          </p>
+        </section>
+
+        <section id="third-party" aria-labelledby="third-party-heading">
+          <h2 id="third-party-heading">Third-Party Services</h2>
+          <p>
+            The Extension does not use third-party analytics, advertising, tracking, or developer-operated
+            data collection services, and does not load remote JavaScript for its functionality.
+          </p>
+          <p>
+            YouTube (and Google services you use while signed in) are independent third parties. Their
+            collection and use of data are governed by their own privacy policies and terms. This Privacy
+            Policy does not describe, control, or replace YouTube’s or Google’s practices. You should review
+            the applicable policies for those services.
+          </p>
+          <p>
+            Users should also review applicable laws in their jurisdiction and the privacy practices of
+            third-party services they use.
+          </p>
+        </section>
+
+        <section id="chrome-storage-sync" aria-labelledby="chrome-storage-sync-heading">
+          <h2 id="chrome-storage-sync-heading">Chrome Storage Sync</h2>
+          <p>
+            The Extension stores user-selected layout preferences using Chrome’s storage synchronization
+            mechanism (<code>chrome.storage.sync</code>). The stored preference keys are:
+            <code>enabled</code>, <code>commentsWidth</code>, <code>relatedWidth</code>, and
+            <code>stickyRelated</code>.
+          </p>
+          <p>
+            If Chrome Sync is enabled for your browser/profile, Chrome may synchronize these settings
+            through your Chrome/Google account so they can be available across your signed-in Chrome
+            instances, subject to Chrome’s own sync behavior and settings.
+          </p>
+          <p>
+            This does not mean that the Extension’s developer receives these settings, operates a server
+            that stores them, or collects Google account information merely because Chrome Sync may
+            synchronize extension settings.
+          </p>
+        </section>
+
+        <section id="user-controls" aria-labelledby="user-controls-heading">
+          <h2 id="user-controls-heading">User Controls</h2>
+          <p>You can control how the Extension affects your experience by:</p>
+          <ul>
+            <li>Changing extension settings through the Extension popup</li>
+            <li>Disabling the Extension in Chrome</li>
+            <li>Uninstalling the Extension</li>
+            <li>Managing Chrome Sync and storage through Chrome’s own settings</li>
+          </ul>
+        </section>
+
+        <section id="childrens-privacy" aria-labelledby="childrens-privacy-heading">
+          <h2 id="childrens-privacy-heading">Children's Privacy</h2>
+          <p>
+            The Extension is not specifically directed at children and does not knowingly collect personal
+            information from children. If you believe a child has provided personal information through
+            means related to this Extension in a way that requires attention, please contact us using the
+            details below.
+          </p>
+        </section>
+
+        <section id="changes" aria-labelledby="changes-heading">
+          <h2 id="changes-heading">Changes to This Privacy Policy</h2>
+          <p>
+            We may update this Privacy Policy from time to time to reflect changes in the Extension,
+            packaging requirements, or clarifications. When we do, we will revise the Effective Date above.
+            The updated policy will be posted at this page’s public URL. Continued use of the Extension
+            after an update constitutes awareness of the revised policy as posted.
+          </p>
+        </section>
+
+        <section id="contact" aria-labelledby="contact-heading">
+          <h2 id="contact-heading">Contact</h2>
+          <div class="callout callout-warning" role="note">
+            <p><strong>Action required before publishing:</strong> replace the placeholder below with your real support email.</p>
+          </div>
+          <p>
+            For privacy-related questions about Ambient Mode Layout, contact:
+          </p>
+          <p class="contact-line">
+            Email: <strong class="placeholder">[YOUR SUPPORT EMAIL]</strong>
+          </p>
+        </section>
+
+        <section id="disclaimer" aria-labelledby="disclaimer-heading">
+          <h2 id="disclaimer-heading">Chrome Web Store / Third-Party Platform Disclaimer</h2>
+          <p>
+            Distribution through the Chrome Web Store or other platforms does not mean that Google or any
+            marketplace operator endorses this Extension or this Privacy Policy. Platform operators have their
+            own terms and privacy practices. Listing requirements and developer disclosures are your and the
+            platform’s responsibility as applicable; this page is provided to describe the Extension’s
+            privacy practices as implemented.
+          </p>
+          <p>
+            This Privacy Policy is factual and implementation-based. It does not claim certification or
+            compliance with any specific privacy statute solely by virtue of this document.
+          </p>
+        </section>
+
+        <footer class="doc-footer">
+          <p>© 2026 Ambient Mode Layout. All rights reserved.</p>
+          <p class="muted">Last updated: October 6, 2026</p>
+        </footer>
+      </article>
+    </main>
+  </div>
+</body>
+</html>
